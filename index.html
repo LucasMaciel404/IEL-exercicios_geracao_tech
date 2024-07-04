@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, id='width' initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular IMC</title>
+</head>
+
+<body class="bg-secondary-subtle">
+    <div class="container d-flex align-items-center justify-content-center bg-light rounded-5 mt-5 p-0" id="container">
+        <div class="row col-10">
+            <div class="row align-items-center justify-content-center">
+                <h1 class="text-center">Calculadora de IMC</h1>
+            </div>
+            <div class="row">
+
+                
+                <div class="row m-2">
+                    <label for="nome">Valor da Peça: </label>
+                    <div class="col"><input type="text" name='nome' class="form-control" id='nome'></div>
+                </div>
+                <div class="row m-2">
+                    <label for="quantidade">Quantidade: </label>
+                    <div class="col"><input type="text" name='quantidade' class="form-control" id='quantidade'></div>
+                </div>
+                <div class="row m-2">
+                    <label for="etiqueta">Cor da etiqueta: </label>
+                    <div class="col">
+                        <input type="radio" name='etiqueta' value="vermelho" id='vermelho'>
+                        <label for="vermelho">Vermelho</label>
+                        <input type="radio" name='etiqueta' value="verde" id='verde'>
+                        <label for="verde">Verde</label>
+                        <input type="radio" name='etiqueta' value="amarelo" id='amarelo'>
+                        <label for="amarelo">Amarelo</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-dark text-light p-2 rounded-5">
+                <div class="col d-flex align-items-center justify-content-center text-center ">
+                    <h2 class="retorno_usuario"></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
