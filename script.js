@@ -1,25 +1,23 @@
-let etiqueta = document.getElementsByName('etiqueta')
-let quantidade = document.querySelector('#quantidade').value
-let etiqueta_selecionada = etiqueta.filter((etiquetaColor)=>{
-    if(etiquetaColor.checked){
-        return etiquetaColor
-    }
+const card_list = document.querySelector('.cardLista')
+let objetos = { 
+    img: {
+        src: '',
+        alt: ''
+    },
+    h2: 'Lucas Maciel dos Santos',
+    h2: 'Idade',
+    h2: 'Cargo',
+    h2: 'Salario'
+}
+objetos.forEach((value, key) => {
+    montarTitulo(numeros, card_list, value);
+
 });
 
-let desconto_cor = 0;
-let desconto_quantidade = 0;
-let cor = 'Indefinida';
-
-if(etiqueta_selecionada.value == 'vermelho'){
-    desconto_cor = 0.5
-}else if(etiqueta_selecionada.value == 'verde'){
-    desconto_cor = 0.3
-}else if (etiqueta_selecionada.value == 'amarelo'){
-    desconto_cor = 0.15
+function montarTitulo(listaChildren, pai, tipo) {
+    listaChildren.forEach(num => {
+        const tituloNum = document.createElement(tipo);
+        tituloNum.innerText = num;
+        pai.appendChild(tituloNum);
+    })
 }
-
-if (quantidade > 2){
-    desconto_quantidade = 0.1
-}
-
-// calcular descontos;....
