@@ -1,0 +1,40 @@
+#container{
+    min-height: 500px; 
+    width: 1000px;
+    color: white;
+    background-image: url('https://img.freepik.com/fotos-gratis/por-do-sol-e-silhuetas-de-arvores-nas-montanhas-generative-ai_169016-29371.jpg?w=1060&t=st=1720464721~exp=1720465321~hmac=56b545c8806a4852defde609cefabdb3acd44f988a405cc3c4c3f41a46df9ac5');
+    background-size: cover;
+}
+.animated{
+    transition: 1s;
+}
+.cardLista{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+.info{
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(5px);
+    transition: 500ms ease-in-out;
+}
+.info:hover{
+    transform:scale(110%);
+}
+.info>img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 25px;
+}
+span{
+    font-weight: 700;
+}
