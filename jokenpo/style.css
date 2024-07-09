@@ -8,7 +8,6 @@ body {
     margin: 0;
     background-color: #f0f0f0;
 }
-
 button img {
     width: 50px;
 }
@@ -41,4 +40,66 @@ button img {
 .pontuacao p {
     margin: 10px 0;
     font-size: 18px;
+}
+
+.pontuacao span {
+    font-weight: 600;
+}
+
+.armas button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.detalhes p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.redes-sociais {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.perdeu{
+    background-color: #ffdde0;
+    color: #d32f2f"
+}
+
+.empatou{
+    background-color: #e5e5e5; 
+    color: #808080
+}
+
+.ganhou{
+    background-color: #cefdce;
+    color: #689f38
+}
+
+.imagensResultado{
+    display: flex; 
+    flex-direction: row;
+}
+
+.imagensResultado div{
+    min-width: 50%;
+    margin: 5px;
+}
+
+.imagensResultado img{
+    width: 50px;
 }
